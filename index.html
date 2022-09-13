@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shop icon" href="./maxresdefault.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navimg">
+            <a href="https://www.callofduty.com/"><img width="103px" src="./cod-logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li>GAME </li>
+            <li><i class="fa-solid fa-chevrons-down"></i></li>
+            <li>NEWS</li>
+            <li>ESPORTS</li>
+            <li><i class="fa-solid fa-chevrons-down"></i></li>
+            <li>SUPPORT</li>
+            <li><i class="fa-solid fa-chevrons-down"></i></li>
+            <li>SHOP</li>
+        </ul>
+        <div class="login">
+
+            <button onclick="delet()">DELET</button>
+
+            <h3 id="name" style="color: white;"></h3>
+            
+            <a href="#" class="login2" onclick="Open()" >LOGIN</a>
+            <span>|</span>
+            <a href="#">SIGN UP</a>
+        </div>
+        <span class="n_mcod">MAY CALL OF DUTY</span>
+        <button class="n_btn">PRE-ORDER MWII</button>
+    </nav>
+
+    <div class="container">
+        <div class="box_email">
+            <div class="icon">
+                <i class="fa-solid fa-x" onclick="Close()"></i>
+            </div>
+            <div class="login_menu">
+                <h3>JOIN THE WORLD OF</h3>
+                <img src="./cod-logo.png" alt="">
+                <p>SIGN IN TO YOUR CALL OF DUTY ACCOUNT</p>
+
+
+                <form onsubmit="event.preventDefault(); SignIn()">
+                    <div class="email">
+                        <span for="elaim">Email Address:</span>
+                        <input type="text" id="input">
+                        <span for="retype_email"> Password</span>
+                        <input class="password" type="password" id="input2">
+                    </div>
+
+                    <div class="check">
+                        <input class="checkbox" type="checkbox">
+                        <span> I'm not a robot</span>
+                    </div>
+                    <button type="submit">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <div class="text_img">
+            </div>
+            <div class="text">
+                <div class="text_p">
+                    <p>DIGITALLY PRE-ORDER MODERN <br> WARFARE 2 AND PLAY CAMPAIGN UP TO ONE WEEK EARLY BEGINNING OCT 20
+                    </p>
+                </div>
+            </div>
+            <div class="m_btn">
+                <button>WATCH TRAILER</button>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img_box">
+            </div>
+            <div class="img_box2">
+
+                <div class="box_text">
+                    <div class="b_img">
+                        <img width="100px" src="./mw2-white-logo.png" alt="">
+                    </div>
+                    <span class="b_span">DON'T BE LEFT IN THE DARK FOR THE <br> NEW ERA OF CALL OF DUTY</span>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="img_box3">
+                <div class="box_text2">
+                    <div class="b_img2">
+                        <img width="100px" src="./cod-logo.png" alt="">
+                    </div>
+                    <span class="b_span">NEW SONY COMBAT PACK NOW<br>AVAILABLE</span>
+                </div>
+            </div>
+            <div class="img_box4">
+                <div class="box_text2">
+                    <div class="b_img3">
+                        <img width="100px" src="./wz-logo.png" alt="">
+                    </div>
+                    <span class="b_span">GET ACCESS ALL 100 TIERS OF BATTLE<br>PASS CONTENT</span>
+                </div>
+            </div>
+            <div class="img_box5">
+                <div class="box_text2">
+                    <div class="b_img4">
+                        <img width="100px" src="./cod-shop-logo.png" alt="">
+                    </div>
+                    <span class="b_span">EVER THINK YOU'D WITNESS CALL OF<br> DUTY ANIME? NEITHER DID WE</span>
+                </div>
+            </div>
+        </div>
+        <div class="gtg">
+            <h1>GET THE GAME</h1>
+            <div class="gtg_box">
+                <div class="gtg_img">
+                    <img src="./2022-09-02_20-58-33.png" alt="">
+                </div>
+                <div class="gtg_img2">
+                    <img src="./2022-09-02_20-59-12.png" alt="">
+                </div>
+                <div class="gtg_img">
+                    <img src="./2022-09-02_21-00-16.png" alt="">
+                </div>
+                <div class="gtg_img">
+                    <img src="./2022-09-02_21-00-57.png" alt="">
+                </div>
+            </div>
+            <div class="gtg_img3">
+                <img src="./2022-09-02_20-59-30.png" alt="">
+            </div>
+            <p class="gtg_p">*Based on Suggested Retail Price. At Participating Retailers.</p>
+        </div>
+        <div class="footer">
+            <div class="footer_main">
+                <ul class="menu">
+                    <li>LEGAL</li>
+                    <li>|</li>
+                    <li>TERMS OF USE</li>
+                    <li>|</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>|</li>
+                    <li>COOKIE POLICY</li>
+                    <li>|</li>
+                    <li>SUPPORT</li>
+                </ul>
+
+                <div class="company">
+                    <div class="amblems">
+                        <div class="amblem">
+                            <img width="100px" src="./activisionFeature.jpg" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./Infinity_Ward.jpg" alt="">
+                        </div>
+
+                        <div class="amblem">
+                            <img width="110px" src="./high-moon-logo.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="amblems">
+                        <div class="amblem">
+                            <img width="110px" src="./i.webp" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./beenox-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./raven-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="100px" src="./E2RJB6tWQAEG8ZO.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="amblems">
+                        <div class="amblem">
+                            <img width="55px" src="./shg-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./atvi-shanghai-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./digital-legends-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="55px" src="./solid-state-logo.png" alt="">
+                        </div>
+                        <div class="amblem">
+                            <img width="110px" src="./demonware-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="amblems2">
+                        <div class="comp">
+                            <img src="./esrb-privacy.jpg" alt="">
+                        </div>
+                        <div class="comp2">
+                            <img src="./cod-hub-esrb-en.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <p class="footer_p">© 2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY LEAGUE,
+                    CALL OF DUTY MODERN WARFARE, MODERN WARFARE, CALL OF DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE
+                    and CALL OF DUTY VANGUARD are trademarks of Activision Publishing, Inc. All other trademarks and
+                    trade names are the property of their respective owners.</p>
+                <button class="btn_footer">НАСТРОЙКИ ФАЙЛОВ COOKIE</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
